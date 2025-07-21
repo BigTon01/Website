@@ -40,10 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
              console.log('Button clicked:', this.textContent, 'Data-filter:', this.dataset.filter); 
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-
-           
-            this.classList.add('active');
+            
 
             const filterCategory = this.dataset.filter;
             filterGallery(filterCategory);
