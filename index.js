@@ -18,6 +18,13 @@
            
         });
 
+function bottomFunction() {
+  window.scrollTo({
+    top: 700,
+    behavior: "smooth",
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
      console.log('JavaScript is running!');
     const filterButtons = document.querySelectorAll('.filter-btn'); // 
